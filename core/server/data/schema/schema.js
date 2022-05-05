@@ -64,8 +64,7 @@ module.exports = {
         email_recipient_filter: {
             type: 'text',
             maxlength: 1000000000,
-            nullable: false,
-            defaultTo: 'none'
+            nullable: false
         },
         /**
          * @deprecated: single authors was superceded by multiple authors in Ghost 1.22.0
@@ -659,8 +658,7 @@ module.exports = {
         recipient_filter: {
             type: 'text',
             maxlength: 1000000000,
-            nullable: false,
-            defaultTo: 'status:-free'
+            nullable: false
         },
         error: {type: 'string', maxlength: 2000, nullable: true},
         error_data: {type: 'text', maxlength: 1000000000, fieldtype: 'long', nullable: true},
